@@ -38,14 +38,18 @@ export class ListPage {
     });
   }
   logout(){
-    let loader = this.loadingCtrl.create({
+   let loader = this.loadingCtrl.create({
       content: "<div class='custom-spinner-container'><div class='custom-spinner-box'></div></div>"
-      });
+    });
     loader.present();
     localStorage.setItem("AuthToken",'');
-    localStorage.clear(); 
-    loader.dismiss();
-    window.location.reload(false);
+    localStorage.clear();
+    setTimeout(() => {
+          loader.dismiss();
+          window.location.reload(false);
+        }, 500); 
+    
+    
 
   }
 }
