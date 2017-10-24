@@ -1,0 +1,64 @@
+// http://ionicframework.com/docs/v2/theming/
+
+// Ionic Shared Functions
+// --------------------------------------------------
+// Makes Ionic Sass functions available to your App
+
+@import "globals.core";
+
+// App Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files. Setting
+// variables before Ionic's Sass will use these variables rather than
+// Ionic's default Sass variable values. App Shared Sass imports belong
+// in the app.core.scss file and not this file. Sass variables specific
+// to the mode belong in either the app.ios.scss or app.md.scss files.
+
+
+// App Shared Color Variables
+// --------------------------------------------------
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+// Both iOS and MD colors can be further customized if colors
+// are different per mode.
+
+$colors: (
+
+  //      Dark Colors
+        dark:           #333,
+        dark-2:         #222,
+        dark-3:         #333,
+        dark-4:         #444,
+        dark-5:         #555,
+        dark-6:         #666,
+        dark-8:         #888,
+        dark-a:         #aaa,
+
+  //      Light Colors
+        light:          #FFF,
+        light-ef:        #efefef,
+
+
+
+  //      Bright Colors
+        primary:        #069aff,
+        primary-dark:   #02507A,
+        success:        #28A344,
+        green:          #00EA6D,
+        gold:           #ffba00,
+        gold-dark:      #926300,
+        orange:         #FF8B00,
+        secondary:      #444444,
+        danger:         #EA4335,
+
+  //      Background
+  //      background: #ffffff,
+        background: #fafafa,
+        //background: #f9fafb,
+        //background: #f7f7f8,
+
+        line:           #e4e4e4,
+);

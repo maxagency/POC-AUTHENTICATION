@@ -1,0 +1,197 @@
+ion-avatar[item-left] {
+  margin-right: 12px
+}
+
+ion-avatar.square {
+  //margin-right: 8px;
+
+  img {
+    border-radius: 3px !important;
+    max-width: 7rem;
+    max-height: 7rem;
+  }
+}
+.bodytext{
+  color: #069AFF;
+}
+.listHeaders {
+    padding: -2px 38px 0px 50px;
+    padding-top : 0px;
+    z-index:10;  
+}
+.tops{
+  margin-top:-20px;
+}
+.popover-content{
+    top: 61.5px !important;
+    left:10px !important;
+    right :auto !important;
+}
+.profile-header h1{
+  padding:0;
+  margin:0;
+}
+.side_bars
+ {
+ width:240px;
+ border:0px solid #ddd;
+ height:280px;
+ 
+ }
+.scrollingLists {
+    position: relative;
+    overflow-y: auto;
+    height: 145px;
+    max-height:252px;
+    padding-left:25px; 
+    padding-top : 1px;
+}
+.scrollingLists li {     
+    color: #666666;   
+    list-style-type: none;
+  
+}ion-avatar.medium {
+  img {
+    border-radius: 10rem;
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+  }
+}
+
+.A-3 {
+  img {
+    border-radius: 10rem;
+    max-width: 3rem !important;
+    max-height: 3rem !important;
+  }
+}
+
+.A-3-S {
+  img {
+    border-radius: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+}
+
+.A-4 {
+  img {
+    border-radius: 10rem;
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+}
+.A-4-S {
+  img {
+    border-radius: 3px;
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+}
+
+.A-5 {
+  img {
+    border-radius: 10rem;
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+}
+
+.A-6 {
+  img {
+    border-radius: 10rem;
+    max-width: 6rem;
+    max-height: 6rem;
+  }
+}
+
+.A-6-S {
+  img {
+    border-radius: 3px;
+    max-width: 6rem;
+    max-height: 6rem;
+  }
+}
+
+.A-6-R {
+  img {
+    border-radius: 3px;
+    max-width: 12rem;
+    max-height: 6rem;
+  }
+}
+@mixin rotate($degree) {
+  -webkit-transform: rotate($degree);
+  -moz-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+  -o-transform: rotate($degree);
+  transform: rotate($degree);
+}
+
+ion-icon.tab-button-icon.ion-md-git-network, .tab-button-icon.ion-ios-git-network-outline, .tab-button-icon.ion-ios-git-network {
+  @include rotate(270deg);
+}
+.A-7 {
+  img {
+    border-radius: 10rem;
+    max-width: 7rem;
+    max-height: 7rem;
+  }
+}
+
+.A-7-S {
+  img {
+    border-radius: 3px;
+    max-width: 7rem;
+    max-height: 7rem;
+  }
+}
+
+//ion-avatar.large {
+//  img {
+//    border-radius: 10rem;
+//    max-width: 7rem;
+//    max-height: 7rem;
+//  }
+//}
+
+ion-avatar {
+  img.team {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+}
+
+
+img.team {
+  position: relative;
+  top: -20px;
+  right: -35px;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+}
+
+ion-avatar.square-small {
+  margin-right: 8px;
+  min-width: 3rem;
+  min-height: 3rem;
+
+  img {
+    border-radius: 2px !important;
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+}
+
+[float-right]{
+  float: left;
+  width: 5rem;
+}
+
+img.bg{
+  background-color: color($colors, light);
+}
+
+img.shadow{
+  box-shadow: 0 2px 2px 0 transparent, 0 5px 7px -2px rgba(0, 0, 0, 0.08), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+}

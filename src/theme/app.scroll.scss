@@ -1,0 +1,484 @@
+
+ion-scroll.stat-cards {
+  min-height: 80px;
+  white-space: nowrap;
+  ion-grid {
+    ion-row {
+      ion-col.view-full-stats {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ion-card {
+          padding-top: 3px;
+          padding-bottom: 3px;
+        }
+      }
+      ion-col {
+        ion-card {
+          min-width: 75px;
+          text-align: center;
+          ion-grid {
+            ion-row.stat-card-header {
+              border-bottom: 1px solid color($colors, line);
+              ion-col {
+                div {
+                  color: color($colors, primary);
+                  font-size: 1.4rem;
+                  font-weight: 800;
+                  line-height: 2.6rem;
+                  letter-spacing: .04rem;
+                }
+              }
+            }
+            ion-row.stat-card-data {
+              ion-col {
+                div {
+                  font-size: 1.8rem;
+                  line-height: 3.2rem;
+                  padding-left: 8px;
+                  padding-right: 8px;
+
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-scroll.team-cards {
+  min-height: 120px;
+  white-space: nowrap;
+  ion-grid {
+    ion-row {
+      ion-col {
+        ion-card {
+          width: 150px;
+          border: none;
+          box-shadow: none;
+          min-width: 75px;
+          text-align: center;
+          margin: 0;
+          ion-grid {
+            ion-row.team-card-header {
+              //background-image: url("../../medal-shadow.svg");
+              //border-radius: 500px;
+              //background-size: cover;
+              //background-position: center;
+              display: flex;
+              justify-content: center;
+              img {
+                height: 9rem;
+                width: 9rem;
+                border-radius: 500px;
+                margin: 3px auto;
+              }
+              ion-col {
+                div {
+                  color: color($colors, primary);
+                  font-size: 1.4rem;
+                  font-weight: 800;
+                  line-height: 2.6rem;
+                  letter-spacing: .04rem;
+                }
+              }
+            }
+            ion-row.team-card-data {
+              ion-col {
+                p {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  font-size: 1.4rem;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  font-weight: 600;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-scroll.eo-cards {
+  min-height: 80px;
+  white-space: nowrap;
+  ion-grid {
+    ion-row {
+      ion-col {
+        ion-card {
+          width: 100px;
+          border: none;
+          box-shadow: none;
+          min-width: 75px;
+          text-align: center;
+          margin: 0;
+          ion-grid {
+            ion-row.eo-card-header {
+              //background-image: url("../../medal-shadow.svg");
+              //border-radius: 500px;
+              //background-size: cover;
+              //background-position: center;
+              display: flex;
+              justify-content: center;
+              img {
+                height: 5rem;
+                width: 5rem;
+                border-radius: 500px;
+                margin: 3px auto;
+              }
+              ion-col {
+                div {
+                  color: color($colors, primary);
+                  font-size: 1.4rem;
+                  font-weight: 800;
+                  line-height: 2.6rem;
+                  letter-spacing: .04rem;
+                }
+              }
+            }
+            ion-row.eo-card-data {
+              ion-col {
+                p {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  font-size: 1.4rem;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  font-weight: 600;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-scroll.event-cards {
+  min-height: 200px;
+  border-bottom: 1px solid rgba(black, .1);
+  margin-bottom: 10px;
+  //white-space: nowrap;
+  ion-grid {
+    ion-row {
+      ion-col {
+        ion-card {
+          margin: 8px 8px 16px 8px;
+          border-radius: 3px;
+          width: 210px;
+          //box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(black, .1);
+          //box-shadow: none;
+          border: none;
+          ion-grid {
+            ion-row.event-card-header {
+              //border-bottom: 1px solid color($colors, line);
+              background-image: url("../../blue-ls.png");
+              background-size: cover;
+              background-position: center;
+              height: 105px;
+              //border-radius: 8px;
+              ion-col {
+                .eo-tag {
+                  background: color($colors, dark-3);
+                  border-radius: 500px;
+                  color: white;
+                  padding: 5px;
+                  top: 4px;
+                  margin-left: -4px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  text-transform: uppercase;
+                  position: absolute;
+                  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+                }
+                div {
+                  color: color($colors, primary);
+                  font-size: 1.4rem;
+                  font-weight: 800;
+                  line-height: 2.6rem;
+                  letter-spacing: .04rem;
+                }
+              }
+            }
+            ion-row.event-card-data {
+              background: white;
+              padding: 8px;
+              height: 73px;
+
+              //.fade{
+              //  &:after{
+              //    content: " ";
+              //    display: block;
+              //    position: absolute;
+              //    bottom: 0;
+              //    left: 0;
+              //    height: 20px;
+              //    width: 100%;
+              //    background: linear-gradient(transparent, white);
+              //  }
+              //}
+
+              ion-col {
+
+                // start clampin
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+
+                h2 {
+                  //define vars
+                  $h2-line-height: 1.2;
+                  $h2-lines: 2;
+
+                  font-weight: 600;
+                  font-size: 1.5rem;
+
+                  line-height: $h2-line-height;
+                  max-height: $h2-lines * $h2-line-height * 1em; //exact number of lines
+                  overflow: hidden;
+                  margin-bottom: 3px;
+
+                  span {
+                    display: inline-block;
+                    max-height: ($h2-lines + 1) * $h2-line-height * 1em; //one more line
+                    position: relative;
+
+                    // webkit solution to multi-line text overflow
+                    display: -webkit-box;
+                    -webkit-line-clamp: $h2-lines;
+                    -webkit-box-orient: vertical;
+
+                    &:before { // for the ellipsis
+                      background: #fff; // fallback for old IE
+                      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+                      bottom: $h2-line-height * 1em;
+                      content: '\02026';
+                      height: $h2-line-height * 1em;
+                      position: absolute;
+                      right: 0;
+                      text-align: right;
+                      width: 4em;
+                    }
+
+                    &:after { // to cover all but the last line of text
+                      background: #fff;
+                      content: attr(data-text);
+                      left: 0;
+                      height: ($h2-lines - 1) * $h2-line-height * 1em;
+                      overflow: hidden;
+                      position: absolute;
+                      top: 0;
+                      width: 100%;
+                    }
+
+                    @supports (-webkit-line-clamp: 2) {
+                      &:before, &:after {
+                        content: none;
+                      }
+                    }
+                  }
+                }
+
+                //p {
+                //  $P-line-height: 1.4;
+                //  $P-lines: 2;
+                //  font-weight: 600;
+                //  font-size: 1.4rem;
+                //
+                //  line-height: $P-line-height;
+                //  max-height: $P-lines * $P-line-height * 1em; //exact number of lines
+                //  overflow: hidden;
+                //  margin-bottom: 2px;
+                //}
+                //
+
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                // end clampin
+
+                //white-space: nowrap;
+                overflow: hidden;
+                //text-overflow: ellipsis;
+                //display: -webkit-box;
+                //-webkit-line-clamp: 2;
+                //-webkit-box-orient: vertical;
+
+                //h2{
+                //  font-size: 1.6rem;
+                //  line-height: 1;
+                //  font-weight: 600;
+                //}
+
+                p, ul {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+
+                p {
+                  font-size: 1.4rem;
+                  //line-height: 1.5rem;
+                  padding: 0;
+                  margin: 0;
+                }
+
+                ul.running-list {
+                  padding: 0;
+                  margin: 0;
+                  li {
+                    font-size: 1.3rem;
+                    line-height: 1rem;
+                    color: #666;
+                    font-weight: 500;
+                    list-style: none;
+                    display: inline;
+                    &:after {
+                      content: " \2022";
+                    }
+                    &:last-child:after {
+                      content: none;
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-scroll.purchase-cards {
+  @extend ion-scroll.event-cards;
+  min-height: 500px;
+  ion-grid {
+    ion-row {
+      ion-col {
+        ion-card {
+          margin: 8px 8px 16px 8px;
+          border-radius: 3px;
+          width: 250px;
+          //box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(black, .1);
+          //box-shadow: none;
+          border: none;
+          ion-grid {
+            ion-row.event-card-header {
+              background-image: url("../../super.png");
+              background-size: cover;
+              background-position: center;
+              height: 200px;
+              //border-radius: 8px;
+              ion-col {
+                div {
+                  color: color($colors, primary);
+                  font-size: 1.4rem;
+                  font-weight: 800;
+                  line-height: 2.6rem;
+                  letter-spacing: .04rem;
+                }
+              }
+            }
+            ion-row.event-card-data {
+              background: white;
+              padding: 8px;
+              height: 150px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-card.outlined-card {
+  width: 125px;
+  height: 173px;
+  border: 1px dashed color($colors, line);
+  padding: 10px;
+  background-image: url("../../medal-shadow.png");
+}
+
+//ion-scroll.stat-cards-2 {
+//  min-height: 80px;
+//  white-space: nowrap;
+//  ion-grid {
+//    ion-row {
+//      ion-col.view-full-stats {
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//        ion-card{
+//          padding-top: 3px;
+//          padding-bottom: 3px;
+//        }
+//      }
+//      ion-col {
+//        ion-card {
+//          border: 1px solid color($colors, light);
+//          background-color: transparent;
+//          min-width: 75px;
+//          text-align: center;
+//          ion-grid {
+//            ion-row.stat-card-header {
+//              background: #fff;
+//              border-bottom: 1px solid color($colors, gold);
+//              ion-col {
+//                div {
+//                  color: color($colors, gold);
+//                  font-size: 1.4rem;
+//                  font-weight: 800;
+//                  line-height: 2.6rem;
+//                  letter-spacing: .04rem;
+//                }
+//              }
+//            }
+//            ion-row.stat-card-data {
+//              ion-col {
+//                div{
+//                  font-size: 1.8rem;
+//                  line-height: 3.2rem;
+//                  padding-left: 8px;
+//                  padding-right: 8px;
+//
+//                }
+//              }
+//            }
+//
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+
+
+

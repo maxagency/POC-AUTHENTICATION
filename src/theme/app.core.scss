@@ -1,0 +1,81 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+@import "../pages/auth/login/login";
+@import "../pages/auth/landing/landing";
+@import "../pages/record-stats/record-stats";
+@import "../pages/main/profile/profile";
+@import "../pages/root-page/root-page";
+@import "../pages/main/message-board/message-board";
+//@import "../pages/main/my-players/my-players";
+//@import "../pages/main/my-players/selected-player/player-profile/player-profile";
+//@import "../pages/main/my-players/selected-player/stat-events/selected-stat-event/selected-stat-event";
+// import scss files
+@import "app.variables";
+@import "app.content";
+@import "app.header";
+@import "app.flex";
+@import "app.scroll";
+@import "app.grid";
+@import "app.helper";
+@import "app.col";
+@import "app.card";
+@import "app.icon";
+@import "app.padding";
+@import "app.item";
+@import "app.text";
+@import "app.content";
+@import "app.toolbar";
+@import "app.segment";
+@import "app.button";
+@import "app.auth";
+@import "app.avatar";
+@import "app.thumbnail";
+
+// import fonts from Google
+//@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+//@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+//@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+
+.mt-n-10{
+  margin-top: -35px;
+}
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  color: color($colors, dark-3);
+}
+
+.has-border-bottom {
+  border-bottom: 1px solid color($colors, line);
+}
+
+.bg-white {
+  background: white;
+}
+
+.modal-backdrop-bg {
+  background: rgba(0, 0, 0, .25)
+}
+
+.modal-half-height {
+  height: 50%;
+  min-height: 0px;
+  bottom: 0;
+  top: auto;
+}
+
+ion-page.team-division-filter-page {
+  height: 50%;
+  min-height: 0px;
+  bottom: 0;
+  top: auto;
+}
+
+
+
+

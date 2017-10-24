@@ -1,0 +1,16 @@
+@mixin rotate($degree) {
+  -webkit-transform: rotate($degree);
+  -moz-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+  -o-transform: rotate($degree);
+  transform: rotate($degree);
+}
+
+ion-icon.tab-button-icon.ion-md-git-network, .tab-button-icon.ion-ios-git-network-outline, .tab-button-icon.ion-ios-git-network {
+  @include rotate(90deg);
+}
+.rotateicon {
+  @include rotate(90deg);
+}
+
+

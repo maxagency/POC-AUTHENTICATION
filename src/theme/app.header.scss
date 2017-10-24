@@ -1,0 +1,134 @@
+@import "app.variables";
+
+ion-list-header {
+  //border-bottom-color: color($colors, line);
+  border-bottom: none;
+  padding-left: 8px;
+  margin-top: 10px;
+
+}
+
+ion-note{
+  font-weight: 600;
+  color: color($colors, dark-8);
+}
+
+ion-list-header > div.item-inner > div.input-wrapper > ion-label {
+  color: color($colors, dark-2) !important;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1;
+}
+
+ion-list-header[sub-head] > div.item-inner > div.input-wrapper > ion-label{
+  color: color($colors, dark-6) !important;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+ion-list-header[primary] > div.item-inner > div.input-wrapper > ion-label{
+  color: color($colors, primary) !important;
+}
+//
+//ion-list-header[gold] > div.item-inner > div.input-wrapper > ion-label{
+//  color: color($colors, gold) !important;
+//}
+//
+//ion-list-header[orange] > div.item-inner > div.input-wrapper > ion-label{
+//  color: color($colors, orange) !important;
+//}
+//
+//ion-list-header[secondary] > div.item-inner > div.input-wrapper > ion-label{
+//  color: color($colors, secondary) !important;
+//}
+//
+//ion-list-header[dark-2] > div.item-inner > div.input-wrapper > ion-label{
+//  color: color($colors, dark-2) !important;
+//}
+//
+//ion-list-header[dark-8] > div.item-inner > div.input-wrapper > ion-label{
+//  color: color($colors, dark-8) !important;
+//}
+
+.event-header-content{
+  background: white;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid color($colors, line);
+  .date{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-top: 0;
+  }
+  h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: color($colors, dark-3);
+    margin: 0;
+  }
+  .location{
+    margin: 0;
+  }
+}
+
+.profile-header {
+  text-align: center;
+  background-color: white;
+  padding: 20px 5px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .bg-blurry{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 200%;
+    filter: blur(30px) brightness(1);
+    // Where the magic happens
+    -webkit-filter: blur(85px);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+      border-radius: 12rem;
+      max-width: 11rem;
+      max-height: 11rem;
+      //border: 1px solid color($colors, line);
+      background: rgba(white, .2);
+    }
+  }
+
+  h2 {
+    margin-bottom: 3px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 5px;
+    right: 11px;
+  }
+
+  button {
+    margin-top: 10px
+  }
+}

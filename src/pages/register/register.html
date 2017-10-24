@@ -1,0 +1,56 @@
+<ion-header class="clear">
+    <ion-navbar primary>
+        <ion-title>Welcome to Myapp</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="login">
+    <br>
+    <div class="landing">
+        <div class="landing-logo-container">
+            <h1 class="big-message terms-message">
+                <span class="myludus"><span class="my">Registration</span></span>
+            </h1>
+        </div>
+    </div><br>
+    <ion-list class="name auth-list">
+        <form [formGroup]="getEmailForm" (submit)="login($event)">
+            <ion-item>
+                <ion-label stacked>Email</ion-label>
+                <ion-input class="signup-email" [(ngModel)]="Email" [formControl]="getEmailForm.controls['Email']" type="email"></ion-input>
+            </ion-item>
+            <div *ngIf="getEmailForm.controls['Email'].touched">
+                <div *ngIf="!getEmailForm.controls['Email'].valid && validUser==true" class="alert-danger">
+                    <strong>&nbsp;&nbsp;Invalid Email</strong>
+                </div>
+            </div>
+            <br/>
+            <ion-item>
+                <ion-label stacked>Mobile No.</ion-label>
+                <ion-input class="signup-password" [(ngModel)]="Mobile" [formControl]="getEmailForm.controls['Mobile']" type="number"></ion-input>
+            </ion-item>
+            <div *ngIf="getEmailForm.controls['Mobile'].touched">
+                <div *ngIf="!getEmailForm.controls['Mobile'].valid && validUser==true" class="alert-danger">
+                    <strong>&nbsp;&nbsp;Mobile Number is required</strong>
+                </div>
+            </div>
+            <br/>
+            <ion-item>
+                <ion-label stacked>Password</ion-label>
+                <ion-input class="signup-password" [(ngModel)]="Password" [formControl]="getEmailForm.controls['Password']" type="password"></ion-input>
+            </ion-item>
+            <div *ngIf="getEmailForm.controls['Password'].touched">
+                <div *ngIf="!getEmailForm.controls['Password'].valid && validUser==true" class="alert-danger">
+                    <strong>&nbsp;&nbsp;Password is required</strong>
+                </div>
+            </div>
+            <br/>
+            <ion-item style="text-align: center"><button type="submit" [disabled]="!getEmailForm.valid" ion-button secondary text-center>Register</button></ion-item>
+
+
+        </form>
+        <!-- <button margin-vertical round block small clear light (click)="goToForgotPassword()">Forgot Password?</button> -->
+    </ion-list>
+    &nbsp;
+    <h4>Already have an account?<a (click)="goToLoginPage()">Log In</a></h4>
+</ion-content>

@@ -1,0 +1,65 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Variables
+// --------------------------------------------------
+// Shared Sass variables go in the app.variables.scss file
+@import "app.variables";
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+// Ionic Material Design Sass
+// --------------------------------------------------
+// Custom App variables must be declared before importing Ionic.
+// Ionic will use its default values when a custom variable isn't provided.
+@import "ionic.md";
+
+
+// App Shared Sass
+// --------------------------------------------------
+// All Sass files that make up this app goes into the app.core.scss file.
+// For simpler CSS overrides, custom app CSS must come after Ionic's CSS.
+@import "app.core";
+
+
+// App Material Design Only Sass
+// --------------------------------------------------
+// CSS that should only apply to the Material Design app
+
+ion-thumbnail{
+  max-width: 7rem !important;
+  max-height: 7rem !important;
+}
+
+
+ion-card > ion-list > .item:first-child, ion-list > .item-wrapper:first-child .item {
+  border-top: none;
+}
+
+ion-icon[item-left] + .item-inner, ion-icon[item-left] + .item-input{
+  margin-left: 8px
+}
+
+ion-title.title-img {
+  text-align: center;
+  img {
+    max-width: 160px;
+    padding-top: 6px;
+  }
+}
+
+ion-card{
+  border-radius: 2px;
+}
+
+ion-header.clear::after{
+  background-image: none;
+}
+
+ion-tabbar{
+  background-color: white;
+}

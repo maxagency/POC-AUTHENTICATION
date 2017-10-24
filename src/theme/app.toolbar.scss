@@ -1,0 +1,40 @@
+.toolbar.clear > div.toolbar-background {
+  background: transparent;
+}
+
+.toolbar .toolbar-title{
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.toolbar .bar-button-default{
+  font-weight: 600;
+}
+
+
+.toolbar[light] .toolbar-title{
+  color: color($colors, dark-3);
+}
+
+.toolbar[light] .bar-button-default{
+  color: color($colors, dark-6);
+}
+
+// adds 4px to each side to match padding of content of
+ion-toolbar.has-button > div.toolbar-content {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+
+ion-title > .toolbar-title > img{
+  vertical-align: middle;
+}
+//ion-toolbar.has-three-buttons > div.toolbar-content > ion-grid > ion-row > ion-col[width-33] {
+//  padding-left: 3px;
+//  padding-right: 3px;
+//}
+
+.toolbar-background{
+  //background: color($colors, primary)
+}

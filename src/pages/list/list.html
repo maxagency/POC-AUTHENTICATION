@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+        <ion-title>Contacts</ion-title>
+        <button (click)="logout()" right>
+            <ion-icon ios="ios-exit" md="md-exit">Logout</ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let item of items">
+            <!-- <ion-icon [name]="item.icon" item-start></ion-icon> -->
+            <ion-icon ios="ios-contact" md="md-contact"></ion-icon>{{item.title}}
+            <br>
+            <ion-icon ios="ios-call" md="md-call"></ion-icon> {{item.note}}
+        </ion-item>
+    </ion-list>
+    <div *ngIf="selectedItem" padding>
+        You navigated here from <b>{{selectedItem.title}}</b>
+    </div>
+</ion-content>
